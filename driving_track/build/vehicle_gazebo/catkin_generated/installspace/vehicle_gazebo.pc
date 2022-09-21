@@ -1,0 +1,8 @@
+prefix=/home/rifat/code/sfujim/sfujim_td3/driving_track/install
+
+Name: vehicle_gazebo
+Description: Description of vehicle_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

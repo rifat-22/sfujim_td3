@@ -1,0 +1,8 @@
+prefix=/home/rifat/code/sfujim/sfujim_td3/driving_track/install
+
+Name: driving_track
+Description: Description of driving_track
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
