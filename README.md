@@ -2,6 +2,7 @@
 ```
 cd driving_track
 catkin build
+source devel/setup.bash
 roslaunch driving_track run.launch
 
 
