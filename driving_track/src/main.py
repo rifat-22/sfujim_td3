@@ -1,3 +1,4 @@
+from genericpath import exists
 import numpy as np
 import torch
 import gym
@@ -115,9 +116,13 @@ if __name__ == "__main__":
     #     policy = DDPG.DDPG(**kwargs)
 
     # uncomment before loading
+
     print("file name = ",file_name)
     policy_file = file_name
-    policy.load(f"./models/{policy_file}")
+
+    if len(os.listdir('./models')) != 0:
+        # if any train data exists it will load
+        policy.load(f"./models/{policy_file}")
     ##########
 
     replay_buffer = utils.ReplayBuffer(state_dim, action_dim)
